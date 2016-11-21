@@ -1,0 +1,2 @@
+defmodule Rsvp do
+end
