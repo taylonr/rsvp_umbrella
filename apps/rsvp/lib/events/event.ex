@@ -1,7 +1,7 @@
 defmodule Rsvp.Events do
     use Ecto.Schema
 
-    def schema "events" do
+    schema "events" do
         field :title, :string
         field :location, :string
         field :date, Ecto.DateTime
