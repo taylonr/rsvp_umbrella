@@ -3,6 +3,10 @@ defmodule Rsvp.EventQueries do
 
     alias Rsvp.{Repo, Events}
 
+    def any do
+        Repo.one(from e in Events, select: count(e.id)) != 0
+    end
+
     def get_all do
         Repo.all(from Events)
     end
