@@ -17,4 +17,8 @@ defmodule Rsvp.EventQueries do
     def get_by_id(id) do
         Repo.get(Events, id)
     end
+
+    def create(event) do
+        Repo.insert!(event)
+    end
 end
