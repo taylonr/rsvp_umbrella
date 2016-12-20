@@ -1,4 +1,4 @@
-<a href="events/<%= @event.id %>">
+<a href="<%= event_path(@conn, :show, @event.id) %>">
     <div class="list-group-item">
         <h4 class="list-group-item-heading"><%= @event.title %></h4>
 
