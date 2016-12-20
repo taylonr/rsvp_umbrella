@@ -1,0 +1,17 @@
+<h1>All Events</h1>
+<div class="list-group">
+    <%= for e <- @events do %>
+        <a href="events/<%= e.id %>">
+            <div class="list-group-item">
+                <h4 class="list-group-item-heading"><%= e.title %></h4>
+
+                <span>
+                    <span class="text-muted"><%= e.location %></span>
+                    <span class="pull-right">
+                        <strong><%= format_date e.date %></strong>
+                    </span>
+                </span>
+            </div>
+        </a>
+    <% end %>
+</div>
