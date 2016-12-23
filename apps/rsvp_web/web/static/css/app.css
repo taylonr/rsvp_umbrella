@@ -1,1 +1,18 @@
 /* This file is for your main application css. */
+.header .title {
+    font-size: 3em;
+    text-align: center;
+    display: inherit;
+}
+
+.header .sub-title{
+    font-size: 1.5em;
+    text-align: center;
+    display: inherit;
+    color: gray;
+}
+
+.list-group a {
+    text-decoration: none;
+    color: inherit;
+}
