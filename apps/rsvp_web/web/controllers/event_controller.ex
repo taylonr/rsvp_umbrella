@@ -10,4 +10,12 @@ defmodule RsvpWeb.EventController do
         events = Rsvp.EventQueries.get_all
         render conn, "list.html", events: events
     end
+
+    def create(conn, _params) do
+        changeset = Rsvp.Events.changeset(%Rsvp.Events{}, %{})
+        render conn, "create.html", changeset: changeset
+    end
+
+    def add(conn, params) do
+    end
 end

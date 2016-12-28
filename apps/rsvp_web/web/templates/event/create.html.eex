@@ -1,0 +1,25 @@
+<h1>Add an Event</h1>
+
+<%= form_for @changeset, event_path(@conn, :add), fn f -> %>
+    <div class="form-group">
+        <%= label f, :title, "Title" %>
+        <%= text_input f, :title, class: "form-control" %>
+    </div>
+
+    <div class="form-group">
+        <%= label f, :location, "Location" %>
+        <%= text_input f, :location, class: "form-control" %>
+    </div>
+
+    <div class="form-group">
+        <%= label f, :date, "Date & Time" %>
+        <%= text_input f, :date, class: "form-control", type: "datetime-local" %>
+    </div>
+
+    <div class="form-group">
+        <%= label f, :description, "Description" %>
+        <%= textarea f, :description, class: "form-control", rows: 5 %>
+    </div>
+
+    <%= submit "Add", class: "btn btn-primary pull-right" %>
+<% end %>
