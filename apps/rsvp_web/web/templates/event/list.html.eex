@@ -1,4 +1,5 @@
 <h1>All Events</h1>
+<a href="<%= event_path(@conn, :create) %>" class="btn btn-primary pull-right">Add Event</a>
 <%= render RsvpWeb.SharedView, "count.html", list: @events %>
 <div class="list-group">
     <%= for e <- @events do %>
