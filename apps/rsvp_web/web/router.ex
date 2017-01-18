@@ -22,6 +22,9 @@ defmodule RsvpWeb.Router do
     post "/events/new", EventController, :add
     get "/events/:id", EventController, :show
 
+    get "/login", LoginController, :index
+    post "/login", LoginController, :login
+
   end
 
   # Other scopes may use custom stacks.
