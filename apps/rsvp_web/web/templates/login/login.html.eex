@@ -1,4 +1,4 @@
-<%= form_for @conn, login_path(@conn, :login), [name: :login], fn f -> %>
+<%= form_for @conn, login_path(@conn, :login), [as: :login], fn f -> %>
   <%= text_input f, :username %>
   <%= submit "Login" %>
 <% end %>

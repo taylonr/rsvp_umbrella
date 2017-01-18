@@ -9,6 +9,11 @@ defmodule RsvpWeb.Router do
     plug :put_secure_browser_headers
   end
 
+  pipeline :authorized do
+    plug :browser
+    plug RsvpWeb.AuthorizedPlug
+  end
+
   pipeline :api do
     plug :accepts, ["json"]
   end
