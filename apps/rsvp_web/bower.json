@@ -1,0 +1,20 @@
+{
+  "name": "rsvp_web",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Nate Taylor <taylonr@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/taylonr/rsvp_umbrella",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
