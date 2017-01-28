@@ -8,4 +8,12 @@ defmodule RsvpWeb.EventChannel do
     def join("event:" <> event_id, _message, socket) do
         {:ok, socket}
     end
+
+    def send_update(event) do
+        payload = %{
+            "quantity" => event.quantity
+        }
+
+        RsvpWeb.Endpoint.broadcast("event:#{event.id}", "update_quantity", payload)
+    end
 end
