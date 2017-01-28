@@ -9,7 +9,7 @@
         <%= number_input f, :quantity, class: "form-control", min: 1 %>
     </div>
 
-
     <%= submit "Reserve", class: "btn btn-primary pull-right" %>
-
 <% end %>
+
+<span id="id" data-id="<%= @event.id %>"></span>
