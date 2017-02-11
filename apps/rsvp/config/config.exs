@@ -37,5 +37,3 @@ config :rsvp, Rsvp.Repo,
   database: "rsvp",
   username: "postgres",
   password: "postgres"
-
-import_config "#{Mix.env}.exs"
