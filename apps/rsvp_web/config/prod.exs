@@ -56,6 +56,4 @@ config :logger, level: :info
 #     config :rsvp_web, RsvpWeb.Endpoint, server: true
 #
 
-# Finally import the config/prod.secret.exs
-# which should be versioned separately.
-import_config "prod.secret.exs"
+secret_key_base: System.get_env("SECRET_KEY_BASE")
